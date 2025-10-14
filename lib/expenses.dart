@@ -10,8 +10,13 @@ class Expenses extends StatefulWidget{
   }
 }
 
-class _ExpensesState extends State<Expenses>
-{
+class _ExpensesState extends State<Expenses>{
+  void _openAddExpenseOverlay(){
+    showModalBottomSheet(
+      context: context, 
+      builder: (ctx)=> Text('Add Expense'));
+  }
+
   final List <Expense> _registereExpenses = [
     Expense(title: "Cheeseburger", amount: 12.45, date: DateTime.now(), category: Category.food), Expense(title: "Pizza", amount: 5.00, date: DateTime.now(), category: Category.food)
   ];
@@ -22,7 +27,7 @@ class _ExpensesState extends State<Expenses>
           title: const Text('Expense Tracker'),
           actions: [
             IconButton(
-              onPressed: (){},
+              onPressed: _openAddExpenseOverlay,
               icon: const Icon(Icons.add),
             )
           ],
