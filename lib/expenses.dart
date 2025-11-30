@@ -19,7 +19,11 @@ class _ExpensesState extends State<Expenses>{
   }
 
   final List <Expense> _registereExpenses = [
-    Expense(title: "Cheeseburger", amount: 12.45, date: DateTime.now(), category: Category.food), Expense(title: "Pizza", amount: 5.00, date: DateTime.now(), category: Category.food)
+    Expense(
+      title: "Cheeseburger", 
+      amount: 12.45, 
+      date: DateTime.now(), 
+      category: Category.Food), Expense(title: "Pizza", amount: 5.00, date: DateTime.now(), category: Category.Food)
   ];
     @override
     Widget build(BuildContext context){
