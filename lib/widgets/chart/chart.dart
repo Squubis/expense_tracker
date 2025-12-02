@@ -36,7 +36,7 @@ Widget build(BuildContext context){
     horizontal: 8,
   ),
   width: double.infinity,
-  height: 100,
+  height: 200,
   decoration: BoxDecoration(
     borderRadius: BorderRadius.circular(8),
     gradient: LinearGradient(colors: [
@@ -74,7 +74,6 @@ Widget build(BuildContext context){
       ),
       )
       .toList(),),
-     
     ],
    ),
   );
